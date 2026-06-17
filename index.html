@@ -40,7 +40,7 @@
             <fieldset>
                 <legend>Perfil</legend>
 
-                <p>Gênero</p>
+                <p>Gênero:</p>
                 <input type="radio" name="userGender" value="Masculino">
                 <label>Masculino</label>
                 <input type="radio" name="userGender" value="Feminino">
@@ -48,7 +48,7 @@
                 <input type="radio" name="userGender" value="NotInformed">
                 <label>Prefiro não informar</label><br>
           
-                <label for="maritalStatus">Estado civil</label>
+                <label for="maritalStatus">Estado civil:</label>
                 <select name="maritalStatus">
                     <option value="NotInformed">selecione...</option>
                     <option value="Casado">Casado</option>
@@ -57,8 +57,8 @@
                     <option value="Uniaoestavel">União estavel</option>
                 </select>
 
-                <label for="userState">Estado</label>
-                <select name="userState">
+                <label for="userState">Estado:</label>
+                <select name="userState" required>
                     <option selected>Escolher...</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -88,6 +88,9 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
+
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity" placeholder="Ex: Fortaleza"  autocomplete="address-level2" required>
             </fieldset>
 
             <button type="submit">Enviar</button>
